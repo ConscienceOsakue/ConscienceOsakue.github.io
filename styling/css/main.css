@@ -147,7 +147,9 @@ input, select, textarea {
 		color: rgba(168, 168, 79, 0.84);
 		
 	}
-
+	#videopic {
+		background-image: url("images/Openlabtop.jpg");
+	}
 	header {
 		margin: 0 0 2em 0;
 	}
