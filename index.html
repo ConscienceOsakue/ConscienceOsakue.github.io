@@ -101,8 +101,23 @@
 											<p>Manipulating Data recodes on SQL DB by CRUD</p>
 										</header>
 									</article>
+								</article>
+								<article class="item">
+									<a href="#" class="image fit">
+										<video id="myVideo" controls autoplay width="300" height="300">
+											<source src="/videos/FinalProject0.mp4" type="video/mp4">
+											<source src="/videos/FinalProject0.ogg" type="video/ogg">
+											<source src="/videos/FinalProject0.webm" type="video/webm">
+										Your browser does not support the video tag.
+									</video>
+									</a>
+									<header>
+										<h3>Emmcn Website Video Run Through</h3>
+										<p>It's a 24mins video that i explain how i Developer the website, it's feature and function</p>
+									</header>
 								</div>
 								<div class="col-4 col-12-mobile">
+								
 									<article class="item">
 										<a href="https://github.com/ConscienceOsakue/conscienceosakue.github.io" class="image fit"><img src="images/mywebsite.png" alt="" /></a>
 										<header>
@@ -111,7 +126,7 @@
 												 The website features a clean layout with easy navigation. Frontend: HTML, CSS, JavaScript|
 												  Development Environment: Visual Studio| Styling: Web fonts, SASS| Hosting: GitHub Pages</p>
 										</header>
-									</article>
+									
 									<article class="item">
 										<a href="https://github.com/ConscienceOsakue/APIs-and-JSON-Exercise" class="image fit"><img src="images/mycodingwork.png" alt="" /></a>
 										<header>
@@ -120,7 +135,7 @@
 												  I Added the NewtonSoft.Json Nuget Package to my Console App, I got the CURRENT weather for my City the
 												   specify in degrees Fahrenheit and displayed response C# | .NET Core | JSON | API </p>
 										</header>
-
+											
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
@@ -133,6 +148,9 @@
 												    VS C# with dapper(ORM) via MySQL tables</p>
 										</header>
 									</article>
+									
+									</article>
+									</article>
 									<article class="item">
 										<a href="https://github.com/ConscienceOsakue/TacoParser" class="image fit"><img src="images/tacoparse.png" alt="" /></a>
 										<header>
@@ -141,8 +159,6 @@
 												Using the Geolocator Nuget Package the program will calculate the two furthest Taco Bell locations. 
 											C# | SQL | xUnit | .NET Core</p>
 										</header>
-										
-									</article>
 								</div>
 							</div>
 
@@ -165,7 +181,7 @@
 								Currently serving in the Army as a Reserve and I hold an Active Security Clearance.<br>
 								 I have a Bachelor's Degree in Computer Science and also a certified AWS Developer Associate.<br>Experience in web design,
 								  SQL databases, cloud services, and writing console applications with C#.  
-								When I'm not coding, I find joy in spending quality time with my family, writing as a published author and 
+								When I'm not coding, I find joy in spending quality time with my family, writing and 
 								singing. Above all, my faith as a practicing Christian guide me in all aspects of my life.
 							</p>
 							<footer id="resumebutton">
@@ -223,7 +239,24 @@
 					</ul>
 			</div>
 			
-		
+			<script>
+				// Get the video element
+				var video = document.getElementById("myVideo");
+			
+				// Add a click event listener to the video element
+				video.addEventListener("click", function (event) {
+					// Prevent the default behavior of the video element
+					event.preventDefault();
+			
+					// Check if the video is paused
+					if (video.paused) {
+						// If paused, play the video
+						video.play();
+					} else {
+						// If playing, do nothing (continue playing)
+					}
+				});
+			</script>
 
 		<!-- Scripts -->
 			<script src="styling/js/jquery.min.js"></script>
