@@ -103,11 +103,12 @@
 									</article>
 								</article>
 								<article class="item" id="videopic">
-									<a href="#" class="image fit" img scr="images/Openlabtop.jpg">
-										<video id="myVideo" controls autoplay width="380" height="300" img scr="images/Openlabtop.jpg">
-											<source src="/videos/FinalProject0.mp4" type="video/mp4" img scr="images/Openlabtop.jpg">
-											<source src="/videos/FinalProject0.ogg" type="video/ogg" img scr="images/Openlabtop.jpg">
-											<source src="/videos/FinalProject0.webm" type="video/webm" img scr="images/Openlabtop.jpg">
+									<a href="#" class="image fit" id="videopic">
+										<img scr="images/Openlabtop.jpg" alt="video cover" width="380" height="300">
+										<video id="myVideo" controls autoplay width="380" height="300">
+											<source src="/videos/FinalProject0.mp4" type="video/mp4">
+											<source src="/videos/FinalProject0.ogg" type="video/ogg">
+											<source src="/videos/FinalProject0.webm" type="video/webm">
 										Your browser does not support the video tag.
 									</video>
 									</a>
@@ -126,6 +127,7 @@
 												 The website features a clean layout with easy navigation. Frontend: HTML, CSS, JavaScript|
 												  Development Environment: Visual Studio| Styling: Web fonts, SASS| Hosting: GitHub Pages</p>
 										</header>
+									</article>
 									
 									<article class="item">
 										<a href="https://github.com/ConscienceOsakue/APIs-and-JSON-Exercise" class="image fit"><img src="images/mycodingwork.png" alt="" /></a>
@@ -135,8 +137,8 @@
 												   I got the CURRENT weather for my City the
 												   specify in degrees Fahrenheit and displayed response C# | .NET Core | JSON | API </p>
 										</header>
-											
 									</article>
+
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
@@ -238,26 +240,6 @@
 						<li>&copy; Copyright 2024</li><li>Design By <a href="https://www.linkedin.com/in/conscience-o-nosa/">Conscience</a></li>
 					</ul>
 			</div>
-			
-			<script>
-				// Get the video element
-				var video = document.getElementById("myVideo");
-			
-				// Add a click event listener to the video element
-				video.addEventListener("click", function (event) {
-					// Prevent the default behavior of the video element
-					event.preventDefault();
-			
-					// Check if the video is paused
-					if (video.paused) {
-						// If paused, play the video
-						video.play();
-					} else {
-						// If playing, do nothing (continue playing)
-					}
-				});
-			</script>
-
 		<!-- Scripts -->
 			<script src="styling/js/jquery.min.js"></script>
 			<script src="styling/js/jquery.scrolly.min.js"></script>
