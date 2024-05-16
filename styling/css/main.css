@@ -13,7 +13,7 @@ pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
+ label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
@@ -148,7 +148,7 @@ input, select, textarea {
 		
 	}
 	#videopic {
-		background-image: url("images/Openlabtop.jpg");
+		background-image: url("../../images/Openlabtop.jpg");
 	}
 	header {
 		margin: 0 0 2em 0;
@@ -281,7 +281,13 @@ input, select, textarea {
 			height: 100%;
 			object-fit: cover; /* Ensure video covers the entire container */
 			z-index: 1; /* Ensure video appears above the cover image */
+			background-image:url("images\Openlabtop.jpg");
 		}
+		#contacttxt {
+			font-size: 0.9em;
+			font:5px
+		}
+	
 /* Row */
 
 	.row {
@@ -1753,7 +1759,7 @@ input, select, textarea {
 /* Sections/Article */
 
 	section, article {
-		margin-bottom: 3em;
+		margin-bottom: 3dvh;
 	}
 
 		section > :last-child,
@@ -1768,7 +1774,7 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
+.image {
 		display: inline-block;
 		border: 0;
 	}
@@ -1859,74 +1865,6 @@ input, select, textarea {
 
 /* Form */
 
-	form label {
-		display: block;
-		text-align: left;
-		margin-bottom: 0.5em;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		position: relative;
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		outline: 0;
-		background: #030303; /*and this one too*/
-		background: rgba(16, 16, 16, 16); /* this is for the eail form might change this too #fff*/
-		width: 100%;
-		border-radius: 0.35em;
-		padding: 0.75em 1em 0.75em 1em;
-		box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
-		border: solid 1px rgba(0, 0, 0, 0.15);
-		-moz-transition: all 0.35s ease-in-out;
-		-webkit-transition: all 0.35s ease-in-out;
-		-ms-transition: all 0.35s ease-in-out;
-		transition: all 0.35s ease-in-out;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			box-shadow: 0 0 2px 1px #8ebebc;
-			background: white; /*might change this too #fff*/
-		}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select {
-		line-height: 1.25em;
-	}
-
-	form textarea {
-		min-height: 14em;
-	}
-
-	form ::-webkit-input-placeholder {
-		color: #555 !important;
-	}
-
-	form :-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-placeholder {
-		color: #555 !important;
-	}
-
-	form :-ms-input-placeholder {
-		color: #555 !important;
-	}
-
-	form ::-moz-focus-inner {
-		border: 0;
-	}
 
 /* Table */
 
@@ -2012,11 +1950,14 @@ input, select, textarea {
 			background: rgba(16, 16, 16, 16); /*might change this back to #fff*/
 			margin: 0;
 			padding: 1em 0 1em 0;
-			font-size: 0.8em;
+			font-size: 0.6em;
 		}
 
 			.item header h3 {
 				font-size: 1em;
+			}
+			.item.image.fit { /*videp pi*/
+
 			}
 
 /* Icons */
@@ -2072,7 +2013,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png"); /*might change back to  ("images/overlay.png)*/
+		background: #333 url("images/Openlabtop.jpg"); /*might change back to  ("images/overlay.png)*/
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: black; /*might change this to #fff*/
 		height: 100%;
@@ -2208,7 +2149,7 @@ input, select, textarea {
 		background-color: black; /*might change this to #dce3e2 or white*/
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
 		#footer .copyright {
@@ -2242,7 +2183,7 @@ input, select, textarea {
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
+			background-image: url("images/Openlabtop.jpg");
 		}
 
 			#main > section.dark {
@@ -2291,8 +2232,13 @@ input, select, textarea {
 			
 			#aboutpic {
 				background-image: url("../../images/aboutmepic.jpg"); /*  come and delete later*/
+				font-size: 0.5em;
+				
 			}
-
+			#abouttxt {
+				font-size: 0.8em;
+				font: 5px
+			}
 			#skills {
 				/*margin: 0;
 				padding: 0;
@@ -2604,7 +2550,7 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: rgba(16, 16, 16, 16) url("images/Abuilding.jpg"); /*might change it back to images/overlay.png*/
+				background: rgba(16, 16, 16, 16) url("/images/Openlabtop.jpg"); /*might change it back to images/overlay.png*/
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(16, 16, 16);
 			}
 
